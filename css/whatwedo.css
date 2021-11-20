@@ -1,0 +1,38 @@
+.topbackground {
+    height: 60vh;
+}
+
+.titul {
+    min-height: 60vh; /* zmenšení kvůli absenci textu */
+}
+
+#prvni {
+    background: none; /* jinak by tam byl useklej shadow radiál */
+    padding-top: 15vh;
+}
+
+/* otočený trojúhelník */
+
+.sidebar-grid-item-1 ul li a svg.animated {
+    transform: rotate(-90deg);
+}
+
+.arrowActive {
+    transform: rotate(-90deg);
+}
+
+/* service description */
+
+.firstContent {
+    display: block;
+    padding: 0 10%;
+    text-align: left;
+    align-items: left;
+    
+}
+
+.firstContent h3 {
+    margin: 50px 0px;
+    line-height: 3rem;
+}
+
