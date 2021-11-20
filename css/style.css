@@ -9,7 +9,7 @@ body {
 }
 
 h3 {
-  font-family: nadpisovy;
+  font-family: "nadpisovy";
 }
 
 .hidden {
@@ -17,8 +17,8 @@ h3 {
 }
 
 @font-face {
-  font-family: nadpisovy;
-  src: url(/manhattanRegular.ttf);
+  font-family: "nadpisovy";
+  src: url(manhattanRegular.ttf);
 }
 
 /* page background, top clouds */
