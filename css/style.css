@@ -18,7 +18,7 @@ h3 {
 
 @font-face {
   font-family: "nadpisovy";
-  src: url(manhattanRegular.ttf);
+  src: url(./ManhattanRegular.ttf);
 }
 
 /* page background, top clouds */
