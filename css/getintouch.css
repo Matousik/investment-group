@@ -1,11 +1,139 @@
 .topbackground {
-    height: 60vh;
+    height: 40vh;
 }
 
 .titul {
-    min-height: 60vh; /* zmenšení kvůli absenci textu */
+    min-height: 40vh; /* zmenšení kvůli absenci textu */
 }
 
 #prvni {
     background: none; /* jinak by tam byl useklej shadow radiál */
+    left: 0;
+    padding-right: 0;
+    width: 100%
+}
+
+/* otočený trojúhelník */
+
+.sidebar-grid-item-1 ul li a svg.animated {
+    transform: rotate(-90deg);
+}
+
+.arrowActive {
+    transform: rotate(-90deg);
+}
+
+/* formulář */
+
+.gradientfromclouds {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(106,106,102,0) 52%);
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactformContainer {
+    width: 770px;
+    padding: 120px 0;
+    margin: 0 30px 0 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,0,0);
+  background: linear-gradient(130deg, rgba(0,0,0,0.7) 0%, rgba(0,2,124,0.7) 100%);
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.input-group {
+    margin-bottom: 45px;
+    position: relative;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+textarea::placeholder, input::placeholder, select::placeholder {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Montserrat";
+}
+
+select option {
+    color: rgb(34, 34, 34);
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: rgb(0,0,0,0.6);
+    
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label,
+select:focus~label,
+select:focus~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.rowNames {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rowNames .input-group {
+    flex-basis: 48%;
+}
+
+/* end formuláře */ 
+
+p {
+    text-align: center;
+    padding: 80px;
+}
+/* odražení footeru */
+
+.navandLogo {
+    margin-top: 120px;
 }
