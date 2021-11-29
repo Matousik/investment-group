@@ -77,15 +77,8 @@ select option {
     color: rgb(34, 34, 34);
 }
 
-label {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    color: #fff;
-    cursor: text;
-    transition: 0.2s;
+select {
+    font-family: "Montserrat";
 }
 
 button {
@@ -106,16 +99,6 @@ button:hover {
     
 }
 
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label,
-select:focus~label,
-select:focus~label{
-    top: -35px;
-    font-size: 14px;
-}
-
 .rowNames {
     display: flex;
     align-items: center;
@@ -128,7 +111,7 @@ select:focus~label{
 
 /* end formuláře */ 
 
-p {
+#aboutResponse {
     text-align: center;
     padding: 80px;
 }
