@@ -1,0 +1,63 @@
+
+/* otočený trojúhelník */
+
+.sidebar-grid-item-1 ul li a svg.animated {
+    transform: rotate(-90deg);
+}
+
+.arrowActive {
+    transform: rotate(-90deg);
+}
+
+/* titul */ 
+
+#growtoday {
+    margin-top: 3rem;
+}
+
+#prvni {
+    background: none;
+}
+
+/* service description */
+
+.firstContent {
+    display: block;
+    padding: 5rem 0;
+    text-align: left;
+    align-items: left;
+}
+
+.articles {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: min(800px,80%);
+}
+
+.firstContent h3 {
+    margin: 50px 0px;
+    line-height: 3rem;
+}
+
+.boxRow {
+    
+    max-width: min(1100px,90%);
+    margin: 2rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:1600px) {
+    
+    .boxRow {
+        flex-wrap: wrap;
+        margin-right: auto;
+        margin-left: auto;
+        width: min(25rem,90%);
+      }
+
+      .box-col1 {
+        flex-basis: auto;
+        flex-grow: 1;
+      }
+}

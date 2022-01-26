@@ -1,0 +1,201 @@
+
+#prvni {
+    background: none; /* jinak by tam byl useklej shadow radiál */
+}
+
+/* otočený trojúhelník */
+
+.sidebar-grid-item-1 ul li a svg.animated {
+    transform: rotate(-90deg);
+}
+
+.arrowActive {
+    transform: rotate(-90deg);
+}
+
+/* grey Double Col - sloupec s šedým pozadím a obrázkem */
+
+.greyDoubleCol {
+    display: flex;
+}
+
+.text-greyDoubleCol {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(48, 48, 48);
+    grid-area: text1;
+}
+
+.text-greyDoubleCol h2 {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #e0e0e0;
+    text-shadow: #a0a0a0;
+}
+
+.text-greyDoubleCol p {
+    line-height: 1.5rem;
+    color: #e0e0e0;
+    text-shadow: #a0a0a0;
+}
+
+.picture-greyDoubleCol {
+    flex-basis: 60%;
+    grid-area: pic;
+    background-image: url(../images/peakpx.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+.picture-greyDoubleCol img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1200px){
+
+    .greyDoubleCol {
+        display: grid;
+        grid-template-areas: 'text1'
+        'pic';
+    }
+    
+    .text-greyDoubleCol {
+        min-height: 400px;
+    }
+
+    .firstContent {
+        max-width: 100%;
+        margin: 5rem 0;
+    }
+
+  }
+
+/* náš part */
+
+.leadership-heading {
+    text-align: center;
+}
+
+.leadership {
+    display: grid;
+    padding: 0 10%;
+    grid-template-areas: 'miki-text miki-pic'
+    'matt-pic matt-text';
+}
+
+.matt-text-class {
+    grid-area: matt-text;
+}
+
+.matt-pic-class {
+    grid-area: matt-pic;
+}
+
+.miki-text-class {
+    grid-area: miki-text;
+}
+
+.miki-pic-class {
+    grid-area: miki-pic;
+}
+
+
+
+.firstContent h3 {
+    margin: 100px 0px;
+    line-height: 3rem;
+    font-size:xx-large;
+}
+
+.box-col1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    box-shadow: none;
+    background: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.box-col1:hover {
+    box-shadow: none;
+}
+
+.box-col1 p {
+    margin-top: 0;
+}
+
+.box-col1 .role {
+    margin-top: 0.1rem;
+    margin-bottom: 0.2rem;
+    padding-top: 0;
+    color: rgb(100, 100, 100);
+}
+
+.box-col1 .description {
+    line-height: 1.5rem;
+}
+
+.box-col1 img {
+    width: 100%;
+}
+
+.layer {
+    background: linear-gradient(130deg, rgba(0,0,0,1) 0%, rgba(0,2,124,1) 100%);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    opacity: 0.8;
+ 
+}
+
+.layer p {
+    left: 7%;
+    width: 87%;
+    color: seashell;
+    bottom: 0;
+    text-transform: uppercase;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+
+.layer:hover p {
+    bottom: 30%;
+    opacity: 1;
+}
+
+.firstContent {
+    padding-bottom: 0;
+    max-width: 100%;
+    padding: 0;
+}
+
+@media(max-width:1200px){
+
+    .leadership {
+        grid-template-areas: 'miki-pic'
+        'miki-text'
+        'matt-pic'
+        'matt-text';
+        width: min(100%,700px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  }
+
