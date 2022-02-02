@@ -4,8 +4,8 @@
     <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> tohle je na ty ikony šipek jako font -->
     <link rel='stylesheet' href='https://rawgit.com/OwlCarousel2/OwlCarousel2/develop/dist/assets/owl.carousel.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/getintouch.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/getintouch.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     <meta charset="UTF-8">
@@ -69,27 +69,30 @@
             </div>
             <div class="gradientfromclouds">
                 <div class="contactformContainer">
-                    <form class="contact-form">
+                    <form action="https://formsubmit.co/matousik@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://matousik.github.io/">
+                        <input type="hidden" name="_subject" value="New client inquiry!">
+                        <input type="hidden" name="_captcha" value="false">
                         <div class="rowNames">
                             <div class="input-group firstName">
-                                <input type="text" id="firstname" placeholder="Your first name" required>
+                                <input type="text" id="firstname" name="firstname" placeholder="Your first name" required>
                                
                             </div>
                             <div class="input-group lastName">
-                                <input type="text" id="lastname" placeholder="Your last name" required>
+                                <input type="text" id="lastname" name="lastname" placeholder="Your last name" required>
                                
                             </div>
                         </div>
                         <div class="input-group">
-                            <input type="email" id="email" placeholder="Your E-Mail" required>
+                            <input type="email" id="email" name="email" placeholder="Your E-Mail" required>
                             
                         </div>
                         <div class="input-group">
-                            <input type="text" id="howdidyouhear" placeholder="How did you hear about us?" required>
+                            <input type="text" id="howdidyouhear" name="howdidyouhear" placeholder="How did you hear about us?" required>
                           
                         </div>
                         <div class="input-group">
-                            <select id="amount" required>
+                            <select id="amount" name="amount" required>
                                 <option selected disabled>What is the size of investment you plan to allocate?</option>
                                 <option value="100000">50,000 USD - 100,000 USD</option>
                                 <option value="300000">100,000 USD - 300,000 USD</option>
@@ -99,7 +102,7 @@
                             </select>
                         </div>
                         <div class="input-group">
-                            <textarea id="customMess" rows="8" placeholder="Leave a custom message"></textarea>
+                            <textarea id="customMess" name="customMess" rows="8" placeholder="Leave a custom message"></textarea>
                         </div>
                         <input type="submit" class="submit" value="Submit">
                     </div>
