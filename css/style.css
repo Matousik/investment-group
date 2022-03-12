@@ -794,7 +794,6 @@ h3 {
 
 .firstContent {
   display: block;
-  padding: 0 10%;
   text-align: left;
   align-items: left;
   margin-bottom: 3rem;
@@ -859,7 +858,7 @@ line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 25px;
   background: rgb(12,13,13);
   background: linear-gradient(130deg, rgba(12,13,13,1) 0%, rgba(28,25,119,1) 100%);
   grid-area: text1;
@@ -870,7 +869,7 @@ line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 25px;
   background: rgb(28,25,119);
   background: linear-gradient(130deg, rgba(28,25,119,1) 0%, rgba(12,13,13,1) 100%);
   grid-area: text2;
@@ -881,7 +880,7 @@ line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 25px;
   background: rgb(28,25,119);
   background: linear-gradient(130deg, rgba(28,25,119,1) 0%, rgba(12,13,13,1) 100%);
   grid-area: text3;
@@ -944,7 +943,7 @@ line-height: 2rem;
 .chooseUS {
  text-align: center;
  margin: 4rem auto;
- max-width: 90%;
+ max-width: 95%;
 }
 
 .chooseUS h2 {
