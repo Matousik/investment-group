@@ -8,9 +8,6 @@
 
 #prvni {
     background: none; /* jinak by tam byl useklej shadow radiál */
-    left: 0;
-    padding-right: 0;
-    width: 100%
 }
 
 /* otočený trojúhelník */
