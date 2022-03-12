@@ -11,6 +11,42 @@ body {
   letter-spacing: 0.12rem;
 }
 
+.green {
+  color: #1c8a00 !important;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 2, 148);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 5px;
+  left: 0;
+  background-color: rgba(0, 2, 148,0.7);
+  border-radius: 10px;
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 @media(max-width:900px){
 
 body {
@@ -63,10 +99,13 @@ h3 {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(180deg, rgba(106,106,102,0) 57%, rgba(255,255,255,1) 100%),
-  url(../images/mountain2.jpg)
+  url(../images/pexels-dylan-thompson-733533.jpg)
                     ;
-  background-position-y: 20%;
+  background-position: center;
+  background-size: cover;
 }
+
+
 .topbackground .clouds {
   position: absolute;
   top: 0;
@@ -87,15 +126,10 @@ h3 {
 #overlay {
   height: 100%;
   width: 100%;
-  background-image: url(../images/stormtrooper.jpg);
+  background-image: linear-gradient(0deg, rgba(255, 255, 2555, 0.7), rgba(255, 255, 255, 0.6)),url(../images/mountain-background-overlay.jpg);
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(10px);
-  -o-filter:blur(10px);
-  -ms-filter:blur(10px);
-  -moz-filter:blur(10px);
-  -webkit-filter:blur(10px);
   position: fixed;
   z-index: -9999;
   opacity: 0.5;
@@ -798,14 +832,16 @@ line-height: 2rem;
   width: calc(100vw-130px);
 }
 
-@media(max-width:1100px){
+@media(max-width:1200px){
 
   .greyDoubleCol {
       display: grid;
       grid-template-areas: 'text1'
       'pic1'
       'text2'
-      'pic2';
+      'pic2'
+      'text3'
+      'pic3';
       height: auto;
   }
 
@@ -840,10 +876,21 @@ line-height: 2rem;
   grid-area: text2;
 }
 
+.text-greyDoubleCol-third {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background: rgb(28,25,119);
+  background: linear-gradient(130deg, rgba(28,25,119,1) 0%, rgba(12,13,13,1) 100%);
+  grid-area: text3;
+}
 
 
 
-.text-greyDoubleCol h2, .text-greyDoubleCol-second h2 {
+
+.text-greyDoubleCol h2, .text-greyDoubleCol-second h2, .text-greyDoubleCol-third h2 {
   padding-bottom: 40px;
   font-size: 27px;
   text-align: center;
@@ -851,7 +898,7 @@ line-height: 2rem;
   text-shadow: #a0a0a0;
 }
 
-.text-greyDoubleCol p, .text-greyDoubleCol-second p {
+.text-greyDoubleCol p, .text-greyDoubleCol-second p, .text-greyDoubleCol-third p {
   line-height: 1.5rem;
   color: #e0e0e0;
   text-shadow: #a0a0a0;
@@ -859,7 +906,7 @@ line-height: 2rem;
 
 .picture-greyDoubleCol {
   flex-basis: 50%;
-  background-image: url(../images/peakpx.jpg);
+  background-image: url(../images/mountain1.jpg);
   background-position: center;
   background-size: cover;
   grid-area: pic1;
@@ -868,17 +915,21 @@ line-height: 2rem;
 
 .picture-greyDoubleCol-second {
   flex-basis: 50%;
-  background-image: url(../images/peakpx.jpg);
+  background-image: url(../images/mountain2.jpg);
   background-position: center;
   background-size: cover;
   grid-area: pic2;
   min-height: 400px;
 }
 
-/* .thidpic {
-  background-image: none;
+ .picture-greyDoubleCol-third {
+  flex-basis: 50%;
+  background-image: url(../images/mountain3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: pic3;
+  min-height: 400px;
 }
- */
 
 .text-greyDoubleCol button, .text-greyDoubleCol-second button {
   width: 260px;
@@ -914,12 +965,12 @@ line-height: 2rem;
 
   margin: 1rem 1rem;
   border-radius: 10px;
-  height: 25rem;
+  min-height: 25rem;
   padding: 1rem;
   position: relative;
   overflow: hidden;
   background: rgb(218, 215, 215);
-background: linear-gradient(23deg, rgba(226, 224, 224, 0.61) 85%, rgba(233, 233, 233, 0.631) 82%);
+  background: linear-gradient(23deg, rgba(226, 224, 224, 0.61) 85%, rgba(233, 233, 233, 0.631) 82%);
   box-shadow: 0px 0px 10px  #a0a0a0 ;
   transition: all 0.5s;
 }
@@ -940,8 +991,7 @@ background: linear-gradient(23deg, rgba(226, 224, 224, 0.61) 85%, rgba(233, 233,
 
 .landingPageIcon {
   margin-top: 15px;
-  width: 200px;
-  height: 150px;
+  height: min(150px,30vw);
 }
 
 @media (max-width:1150px) {

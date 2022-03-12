@@ -47,6 +47,10 @@
     margin-right: auto;
 }
 
+.box-col1 h4 {
+    text-align: center;
+}
+
 @media (max-width:1600px) {
     
     .boxRow {
@@ -60,4 +64,17 @@
         flex-basis: auto;
         flex-grow: 1;
       }
+}
+
+.projectIconDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectIcon {
+    margin-top: 1.5rem;
+    width: 60px;
+    height: 60px;
 }

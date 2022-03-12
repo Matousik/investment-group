@@ -134,7 +134,7 @@
 
 .picture-greyDoubleCol {
     flex-basis: 50%;
-    background-image: url(../images/peakpx.jpg);
+    background-image: url(../images/mountain-services-1.jpg);
     background-position: center;
     background-size: cover;
     grid-area: pic1;
@@ -143,7 +143,7 @@
 
 .picture-greyDoubleCol-second {
     flex-basis: 50%;
-    background-image: url(../images/peakpx.jpg);
+    background-image: url(../images/mountain-services-2.jpg);
     background-position: center;
     background-size: cover;
     grid-area: pic2;
