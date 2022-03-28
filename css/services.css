@@ -3,7 +3,7 @@
 
 #prvni {
     background: none; /* jinak by tam byl useklej shadow radiál */
-    padding-top: 15vh;
+    
 }
 
 /* titul */ 
@@ -91,6 +91,10 @@
         min-height: 400px;
     }
   }
+
+.overviewButton {
+    margin: 0 auto;
+}
 
 .text-greyDoubleCol {
     flex-basis: 50%;

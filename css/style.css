@@ -99,7 +99,7 @@ h3 {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(180deg, rgba(106,106,102,0) 57%, rgba(255,255,255,1) 100%),
-  url(../images/pexels-dylan-thompson-733533.jpg)
+  url(../images/prvni.jpg)
                     ;
   background-position: center;
   background-size: cover;
@@ -276,36 +276,6 @@ h3 {
  grid-area: content;
 }
 
-/* login, sign up */
-
-.upperbar {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-    background: transparent;
-}
-
-.upperbar ul {
-    display: flex;
-}
-
-.upperbar ul li {
-    list-style: none;
-}
-
-.upperbar ul li a {
-    position: relative;
-  box-sizing: border-box;
-  margin: auto;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  color:black;
-  padding-bottom:4px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
-
 /* redundant - na co to je */ 
 @keyframes animate {
   0% {
@@ -328,22 +298,38 @@ h3 {
 @media(max-width:900px){
   .titul {
     left: 0;
-    padding-left: 1rem;
+    display: block;
   }
 }
 
+.jmenoALogo {
+  position: absolute;
+  left: 130px;
+  top: 15vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: calc(100% - 130px);
+}
+
+.firemniLogo {
+  margin: 0 auto;
+}
+
+.firemniLogo img {
+  width: min(300px,60vw);
+}
 
 #prvni {
  display: flex;
  flex-direction: column;
- position: absolute;
- left: 10%;
  align-items: center;
  justify-content: center;
- background: radial-gradient(circle at 50% 50%, #fff , transparent 70%);
- padding-top: 20vh;
- padding-right: 1rem;
+ margin: 0 auto;
 }
+
+
 
 @media(max-width:900px){
   #prvni {
@@ -352,6 +338,14 @@ h3 {
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .jmenoALogo {
+    position: static;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15vh;
   }
 }
 
