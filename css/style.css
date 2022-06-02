@@ -15,6 +15,10 @@ body {
   color: #1c8a00 !important;
 }
 
+ul li {
+  line-height: 2rem;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -234,6 +238,7 @@ h3 {
     right: -200px; /* because of closing animation */
     height: 510px;
     width: 200px;
+    display: none;
     padding-top: 6rem;
     padding-right: 3rem;
     background: linear-gradient(150deg, rgba(255,224,224,1) 0%, rgba(238,238,238,1) 71%);
@@ -966,6 +971,9 @@ line-height: 2rem;
   background: linear-gradient(23deg, rgba(226, 224, 224, 0.61) 85%, rgba(233, 233, 233, 0.631) 82%);
   box-shadow: 0px 0px 10px  #a0a0a0 ;
   transition: all 0.5s;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box-col1:hover {
@@ -978,13 +986,24 @@ line-height: 2rem;
 }
 
 .box-col1 p {
-  margin-top: 20px;
+
  position: relative;
+
 }
 
 .landingPageIcon {
   margin-top: 15px;
-  height: min(150px,30vw);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: min(170px,30vw);
+}
+
+#secure {
+  height: min(130px,26vw) !important;
+}
+
+#balance {
+  height: min(170px,32vw) !important;
 }
 
 @media (max-width:1150px) {
@@ -1224,7 +1243,8 @@ button.active {
 
 .footerNavContacts img {
   align-self: center;
-  width: min(150px,20vw);
+  width: min(150px,30vw);
+  margin-right: 7vw;
 }
 
 @media (max-width: 900px) {

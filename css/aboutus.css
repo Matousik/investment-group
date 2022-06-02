@@ -87,6 +87,8 @@
     grid-template-areas: 'miki-text miki-pic'
     'matt-pic matt-text';
     line-height: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .matt-text-class {
@@ -95,6 +97,7 @@
 
 .matt-pic-class {
     grid-area: matt-pic;
+    min-height: 800px;
 }
 
 .miki-text-class {
@@ -108,7 +111,7 @@
 
 
 .firstContent h3 {
-    margin: 100px 0px;
+    margin: 3rem 0px;
     line-height: 3rem;
     font-size:xx-large;
 }
@@ -144,42 +147,9 @@
 }
 
 .box-col1 img {
-    width: 100%;
+    width: min(650px,100%);
+    margin: 0 auto;
 }
-
-/* .layer {
-    background: linear-gradient(130deg, rgba(0,0,0,1) 0%, rgba(0,2,124,1) 100%);
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.layer:hover {
-    opacity: 0.8;
- 
-}
-
-.layer p {
-    left: 7%;
-    width: 87%;
-    color: seashell;
-    bottom: 0;
-    text-transform: uppercase;
-    position: absolute;
-    transition: 0.5s;
-}
-
-
-
-.layer:hover p {
-    bottom: 30%;
-    opacity: 1;
-} */
 
 .firstContent {
     padding-bottom: 0;
@@ -197,6 +167,15 @@
         width: min(100%,700px);
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
+    }
+
+    .box-col1 .description {
+        line-height: 1.5rem;
+    }
+
+    .box-col1 {
+        min-height: 10rem;
     }
 
   }
